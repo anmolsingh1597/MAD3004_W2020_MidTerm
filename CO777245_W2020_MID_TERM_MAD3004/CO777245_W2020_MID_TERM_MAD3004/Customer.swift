@@ -13,7 +13,8 @@
 
 import Foundation
 
-public class Customer{
+public class Customer: IDisplay
+{
     
     let id: Int
     var firstName: String
@@ -30,6 +31,13 @@ public class Customer{
         self.lastName = lastName
         self.emailId = emailId
         self.billDictionary = billDictionary
+    }
+    
+    func display() {
+        print("Customer Id : \(self.id)")
+        print("Customer Full Name : \(self.fullName)")
+        print("Customer Email ID : \(self.emailId)")
+        
     }
     
 }

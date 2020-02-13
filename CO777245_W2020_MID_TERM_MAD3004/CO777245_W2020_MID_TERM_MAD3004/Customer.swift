@@ -21,6 +21,15 @@ public class Customer{
     var fullName:String{
         return "\(firstName) \(lastName)"
     }
+    var emailId: String
+    var billDictionary: [String: Double]
     
+    init(id: Int, firstName: String, lastName: String, emailId: String, billDictionary:[String: Double]){
+        self.id = id
+        self.firstName = firstName
+        self.lastName = lastName
+        self.emailId = emailId
+        self.billDictionary = billDictionary
+    }
     
 }

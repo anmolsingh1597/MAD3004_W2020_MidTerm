@@ -13,7 +13,11 @@ import Foundation
 
 public class Bill
 {
-    let billId: Int
-    var billDate: Date
-    var billType:
+    let billId: Int = 0
+    var billDate: Date = Date()
+    var billType: Enum.BillType = .None
+    var totalBillAmount: Double = 0.0
+   
+    
+    
 }

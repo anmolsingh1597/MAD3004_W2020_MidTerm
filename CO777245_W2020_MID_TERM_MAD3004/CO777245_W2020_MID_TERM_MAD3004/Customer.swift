@@ -37,6 +37,7 @@ public class Customer: IDisplay
         print("Customer Id : \(self.id)")
         print("Customer Full Name : \(self.fullName)")
         print("Customer Email ID : \(self.emailId)")
+        print("Bill : \(self.billDictionary)")
         
     }
     

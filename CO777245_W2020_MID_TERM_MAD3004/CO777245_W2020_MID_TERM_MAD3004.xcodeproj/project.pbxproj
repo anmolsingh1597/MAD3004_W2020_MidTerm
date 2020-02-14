@@ -10,6 +10,7 @@
 		8E3E08F823F6114C0054818B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E08F723F6114C0054818B /* main.swift */; };
 		8E3E08FF23F611CB0054818B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E08FE23F611CB0054818B /* Customer.swift */; };
 		8E3E090123F616570054818B /* IDislpayDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090023F616570054818B /* IDislpayDelegate.swift */; };
+		8E3E090323F61BB70054818B /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090223F61BB70054818B /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		8E3E08F723F6114C0054818B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8E3E08FE23F611CB0054818B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		8E3E090023F616570054818B /* IDislpayDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDislpayDelegate.swift; sourceTree = "<group>"; };
+		8E3E090223F61BB70054818B /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				8E3E08F723F6114C0054818B /* main.swift */,
 				8E3E08FE23F611CB0054818B /* Customer.swift */,
 				8E3E090023F616570054818B /* IDislpayDelegate.swift */,
+				8E3E090223F61BB70054818B /* Bill.swift */,
 			);
 			path = CO777245_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3E090323F61BB70054818B /* Bill.swift in Sources */,
 				8E3E08F823F6114C0054818B /* main.swift in Sources */,
 				8E3E08FF23F611CB0054818B /* Customer.swift in Sources */,
 				8E3E090123F616570054818B /* IDislpayDelegate.swift in Sources */,

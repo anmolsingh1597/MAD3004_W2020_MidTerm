@@ -13,11 +13,16 @@ import Foundation
 
 public class Bill
 {
-    let billId: Int = 0
-    var billDate: Date = Date()
-    var billType: Enum.BillType = .None
-    var totalBillAmount: Double = 0.0
+    let billId: Int
+    var billDate: Date
+    var billType: Enum.BillType
+    var totalBillAmount: Double
    
-    
-    
+    init(){  //constructor
+         self.billId = 0 //intializing variables necessary in class
+         self.billDate = Date()
+        self.billType = .None
+        self.totalBillAmount = 0.0
+       
+     }
 }

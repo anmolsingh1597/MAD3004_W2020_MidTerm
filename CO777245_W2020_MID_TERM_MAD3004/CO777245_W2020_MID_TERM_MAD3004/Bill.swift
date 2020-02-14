@@ -18,11 +18,11 @@ public class Bill
     var billType: Enum.BillType
     var totalBillAmount: Double
    
-    init(){  //constructor
-         self.billId = 0 //intializing variables necessary in class
-         self.billDate = Date()
-        self.billType = .None
-        self.totalBillAmount = 0.0
+    init(billId: Int, billDate: Date ,billType: Enum.BillType, totalBillAmount: Double){  //constructor
+         self.billId = billId //intializing variables necessary in class
+         self.billDate = billDate
+        self.billType = billType
+        self.totalBillAmount = totalBillAmount
        
      }
 }

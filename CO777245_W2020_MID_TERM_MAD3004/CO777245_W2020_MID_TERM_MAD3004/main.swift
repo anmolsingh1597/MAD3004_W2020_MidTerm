@@ -11,11 +11,19 @@ import Foundation
 
 var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com")
 
+var c2 : Customer = Customer(id: 2, firstName: "Aman", lastName: "Kaur", emailId: "me_aman@me.com")
 
+var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", emailId: "me_ikroop@me.com")
 
-
+var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com")
 
 c1.display()
+
+c2.display()
+
+c3.display()
+
+c4.display()
 
 /*var b1 = Bill(billId: 008, billDate: Date.from(year: 1989, month: 12, day: 15) ?? Date(), billType: .Mobile, totalBillAmount: 67.998)
 

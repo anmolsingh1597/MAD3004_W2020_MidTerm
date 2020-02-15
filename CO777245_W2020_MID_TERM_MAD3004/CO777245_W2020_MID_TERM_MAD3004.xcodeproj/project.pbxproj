@@ -17,6 +17,7 @@
 		8E3E090B23F872B10054818B /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090A23F872B10054818B /* Date+extension.swift */; };
 		8E3E090D23F877EC0054818B /* Integer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090C23F877EC0054818B /* Integer+extension.swift */; };
 		8E3E090F23F899410054818B /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090E23F899400054818B /* Internet.swift */; };
+		8E3E091123F89DBC0054818B /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E091023F89DBC0054818B /* Hydro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		8E3E090A23F872B10054818B /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 		8E3E090C23F877EC0054818B /* Integer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Integer+extension.swift"; sourceTree = "<group>"; };
 		8E3E090E23F899400054818B /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		8E3E091023F89DBC0054818B /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				8E3E090A23F872B10054818B /* Date+extension.swift */,
 				8E3E090C23F877EC0054818B /* Integer+extension.swift */,
 				8E3E090E23F899400054818B /* Internet.swift */,
+				8E3E091023F89DBC0054818B /* Hydro.swift */,
 			);
 			path = CO777245_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				8E3E090723F61F1C0054818B /* Mobile.swift in Sources */,
 				8E3E090F23F899410054818B /* Internet.swift in Sources */,
 				8E3E090523F61C7F0054818B /* Enum.swift in Sources */,
+				8E3E091123F89DBC0054818B /* Hydro.swift in Sources */,
 				8E3E090B23F872B10054818B /* Date+extension.swift in Sources */,
 				8E3E090123F616570054818B /* IDislpayDelegate.swift in Sources */,
 				8E3E090923F8703C0054818B /* Double+extension.swift in Sources */,

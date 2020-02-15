@@ -11,7 +11,7 @@ import Foundation
    extension Double{
        func getFormattedAmount() -> String
     {
-           return String(format: "$%0.2f", Float(self))
+           return String(format: "$%0.2f", Double(self))
     }
 
     

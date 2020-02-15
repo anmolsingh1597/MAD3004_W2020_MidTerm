@@ -15,3 +15,6 @@ c1 = Customer(id: 987, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol
 
 c1.display()
 
+var b1 = Bill(billId: 008, billDate: Date(), billType: .Mobile, totalBillAmount: 67.998)
+
+b1.display()

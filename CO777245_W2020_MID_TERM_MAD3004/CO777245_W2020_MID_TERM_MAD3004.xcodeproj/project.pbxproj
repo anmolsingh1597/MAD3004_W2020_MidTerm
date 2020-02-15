@@ -14,6 +14,7 @@
 		8E3E090523F61C7F0054818B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090423F61C7F0054818B /* Enum.swift */; };
 		8E3E090723F61F1C0054818B /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090623F61F1C0054818B /* Mobile.swift */; };
 		8E3E090923F8703C0054818B /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090823F8703C0054818B /* Double+extension.swift */; };
+		8E3E090B23F872B10054818B /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090A23F872B10054818B /* Date+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		8E3E090423F61C7F0054818B /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		8E3E090623F61F1C0054818B /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		8E3E090823F8703C0054818B /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
+		8E3E090A23F872B10054818B /* Date+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				8E3E090423F61C7F0054818B /* Enum.swift */,
 				8E3E090623F61F1C0054818B /* Mobile.swift */,
 				8E3E090823F8703C0054818B /* Double+extension.swift */,
+				8E3E090A23F872B10054818B /* Date+extension.swift */,
 			);
 			path = CO777245_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				8E3E08FF23F611CB0054818B /* Customer.swift in Sources */,
 				8E3E090723F61F1C0054818B /* Mobile.swift in Sources */,
 				8E3E090523F61C7F0054818B /* Enum.swift in Sources */,
+				8E3E090B23F872B10054818B /* Date+extension.swift in Sources */,
 				8E3E090123F616570054818B /* IDislpayDelegate.swift in Sources */,
 				8E3E090923F8703C0054818B /* Double+extension.swift in Sources */,
 			);

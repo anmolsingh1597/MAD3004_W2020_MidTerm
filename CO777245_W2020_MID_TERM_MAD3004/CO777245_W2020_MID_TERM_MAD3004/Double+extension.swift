@@ -13,6 +13,20 @@ import Foundation
     {
            return String(format: "$%0.2f", Double(self))
     }
-
+    
+    func concatGb() -> String
+    {
+        return "\(self) GB"
+    }
+    
+    func concatMinutes() -> String
+    {
+        return "\(self) minutes"
+    }
+    
+    func concatUnits() -> String
+    {
+        return "\(self) units"
+    }
     
 }

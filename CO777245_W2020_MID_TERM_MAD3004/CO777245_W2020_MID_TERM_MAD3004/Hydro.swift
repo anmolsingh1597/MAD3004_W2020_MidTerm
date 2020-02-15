@@ -31,8 +31,8 @@ public class Hydro: Bill
     override func display() {
         print("Bill ID: \(self.billId.concatHydroPrefix())")
         super.display()
-        print("Provider Name: \(self.agencyName)")
-        print("Internet GB Used: \(self.unitConsumed) units")
+        print("Agency Name: \(self.agencyName)")
+        print("Units Consumed: \(self.unitConsumed.concatUnits())")
     }
     
 }

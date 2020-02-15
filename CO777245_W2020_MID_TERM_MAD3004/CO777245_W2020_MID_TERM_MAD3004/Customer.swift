@@ -23,6 +23,7 @@ public class Customer: IDisplay
         return "\(firstName) \(lastName)"
     }
     var emailId: String
+    var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
     
     init(id: Int, firstName: String, lastName: String, emailId: String){
@@ -35,6 +36,12 @@ public class Customer: IDisplay
     func addingBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
         
+    }
+    
+    func totalBillingAmount(){
+        for index in billDictionary.values{
+            totalBill += index.billAmount
+        }
     }
     
     func display() {

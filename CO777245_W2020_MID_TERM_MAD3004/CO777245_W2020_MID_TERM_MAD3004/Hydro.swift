@@ -24,12 +24,12 @@ public class Hydro: Bill
     
    override func calculateBill() -> Double{
         
-    super.billAmount = 1 * self.unitConsumed
+    super.billAmount = 1.73 * self.unitConsumed
         return super.billAmount
     }
     
     override func display() {
-        print("Bill ID: \(self.billId.concatInternetPrefix())")
+        print("Bill ID: \(self.billId.concatHydroPrefix())")
         super.display()
         print("Provider Name: \(self.agencyName)")
         print("Internet GB Used: \(self.unitConsumed) units")

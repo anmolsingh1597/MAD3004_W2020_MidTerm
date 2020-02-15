@@ -24,7 +24,7 @@ public class Internet: Bill
     
    override func calculateBill() -> Double{
         
-    super.billAmount = 10 * self.plannedGbUsed
+    super.billAmount = 7.16 * self.plannedGbUsed
         return super.billAmount
     }
     

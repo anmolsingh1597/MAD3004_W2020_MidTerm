@@ -27,3 +27,7 @@ m1.display()
 var i1 = Internet(billId: 98, billDate: Date.from(year: 2020, month: 01, day: 21) ?? Date(), providerName: "Rogers", plannedGbUsed: 15)
 
 i1.display()
+
+var h1 = Hydro(billId: 0012, billDate: Date(), agencyName: "Canadian Supply", unitConsumed: 32)
+
+h1.display()

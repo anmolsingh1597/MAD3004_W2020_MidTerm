@@ -31,7 +31,7 @@ public class Mobile: Bill
     
    override func calculateBill() -> Double{
         
-    super.billAmount = 1 * self.internetGbUsed + 1*minuteUsed
+    super.billAmount =  3.43 * self.internetGbUsed + 0.73*self.minuteUsed
         return super.billAmount
     }
     

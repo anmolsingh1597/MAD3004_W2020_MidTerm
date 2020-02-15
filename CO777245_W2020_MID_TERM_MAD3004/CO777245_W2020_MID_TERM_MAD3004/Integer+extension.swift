@@ -10,14 +10,22 @@ import Foundation
 
 extension Int{
     
-    func concatMobilePrefix() -> String{
+    func concatCustomerPrefix() -> String
+    {
+        return "C000\(self)"
+    }
+    
+    func concatMobilePrefix() -> String
+    {
         return "MOBB000\(self)"
     }
-    func concatInternetPrefix() -> String{
+    func concatInternetPrefix() -> String
+    {
         return "INTB000\(self)"
     }
-    func concatHydroPrefix() -> String{
+    func concatHydroPrefix() -> String
+    {
          return "HYDB000\(self)"
-     }
+    }
     
 }

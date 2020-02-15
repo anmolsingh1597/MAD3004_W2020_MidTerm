@@ -9,9 +9,11 @@
 import Foundation
 
 
-var c1 : Customer
+var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com")
 
-c1 = Customer(id: 987, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com")
+
+
+
 
 c1.display()
 

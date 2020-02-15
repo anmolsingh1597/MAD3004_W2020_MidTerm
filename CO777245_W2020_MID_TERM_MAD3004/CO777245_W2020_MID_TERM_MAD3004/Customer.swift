@@ -45,7 +45,7 @@ public class Customer: IDisplay
     }
     
     func display() {
-        print("Customer Id : \(self.id)")
+        print("Customer Id : \(self.id.concatCustomerPrefix())")
         print("Customer Full Name : \(self.fullName)")
         print("Customer Email ID : \(self.emailId)")
         //print("Bill : \(self.billDictionary)")

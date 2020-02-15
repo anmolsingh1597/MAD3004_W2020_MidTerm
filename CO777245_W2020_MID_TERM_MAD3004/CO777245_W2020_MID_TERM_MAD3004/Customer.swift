@@ -25,6 +25,7 @@ public class Customer: IDisplay
     var emailId: String
     var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
+    var custDictionary = [Int: Customer]()
     
     init(id: Int, firstName: String, lastName: String, emailId: String){
         self.id = id
@@ -51,6 +52,8 @@ public class Customer: IDisplay
             totalBill += index.billAmount
         }
     }
+    
+    
     
     func display() {
         print("Customer Id : \(self.id.concatCustomerPrefix())")

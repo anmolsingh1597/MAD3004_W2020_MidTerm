@@ -23,14 +23,18 @@ public class Customer: IDisplay
         return "\(firstName) \(lastName)"
     }
     var emailId: String
-    var billDictionary: [String: Double]
+    var billDictionary = [Int: Bill]()
     
-    init(id: Int, firstName: String, lastName: String, emailId: String, billDictionary:[String: Double]){
+    init(id: Int, firstName: String, lastName: String, emailId: String){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
-        self.billDictionary = billDictionary
+    }
+    
+    func addingBillstoCustomer(bill: Bill){
+        billDictionary.updateValue(bill, forKey: bill.billId)
+        
     }
     
     func display() {

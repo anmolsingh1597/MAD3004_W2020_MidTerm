@@ -40,6 +40,7 @@ public class Customer: IDisplay
         return emailPred.evaluate(with: email)
     }
     
+    
     func addingBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
         

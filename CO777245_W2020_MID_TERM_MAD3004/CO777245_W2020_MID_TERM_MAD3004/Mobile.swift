@@ -29,6 +29,13 @@ public class Mobile: Bill
         super.init(billId: billId, billDate: billDate, billType: Enum.BillType.Mobile)
     }
     
+    func isValidMobileNumber(value: String) -> Bool {
+          let PHONE_REGEX = "^\\d{3}-\\d{3}-\\d{4}$"
+          let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: value)
+          return result
+      }
+    
    override func calculateBill() -> Double{
         
     super.billAmount =  3.43 * self.internetGbUsed + 0.73*self.minuteUsed
@@ -36,13 +43,18 @@ public class Mobile: Bill
     }
     
     override func display() {
-        print("Bill ID: \(billId.concatMobilePrefix())")
+        print("Bill ID : \(billId.concatMobilePrefix())")
         super.display()
         print("Manufactuer Name : \(mobileManufacturerName)")
-        print("Plan Name: \(planName)")
-        print("Mobile Number: \(mobileNumber)")
-        print("Internet Used: \(internetGbUsed.concatGb())")
-        print("Minutes Used: \(minuteUsed.concatMinutes())")
+        print("Plan Name : \(planName)")
+           if self.isValidMobileNumber(value: mobileNumber){
+                 print("Mobile Number : \(self.mobileNumber)")
+            }
+            else{
+                print("Mobile Number : invalid mobile number")
+            }
+        print("Internet Used : \(internetGbUsed.concatGb())")
+        print("Minutes Used : \(minuteUsed.concatMinutes())")
         
     }
     

@@ -11,13 +11,13 @@ import Foundation
 extension Int{
     
     func concatMobilePrefix() -> String{
-        return "MOBILE_\(self)"
+        return "MOBB000\(self)"
     }
     func concatInternetPrefix() -> String{
-        return "INTERNET_\(self)"
+        return "INTB000\(self)"
     }
     func concatHydroPrefix() -> String{
-         return "HYDRO_\(self)"
+         return "HYDB000\(self)"
      }
     
 }

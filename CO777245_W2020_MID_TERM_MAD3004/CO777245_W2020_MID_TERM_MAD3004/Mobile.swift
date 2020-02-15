@@ -41,8 +41,8 @@ public class Mobile: Bill
         print("Manufactuer Name : \(mobileManufacturerName)")
         print("Plan Name: \(planName)")
         print("Mobile Number: \(mobileNumber)")
-        print("Internet Used: \(internetGbUsed)")
-        print("Minutes Used: \(minuteUsed)")
+        print("Internet Used: \(internetGbUsed) GB")
+        print("Minutes Used: \(minuteUsed) minutes")
         
     }
     

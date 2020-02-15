@@ -23,3 +23,7 @@ b1.display()
 var m1 = Mobile(billId: 008, billDate: Date.from(year: 1989, month: 12, day: 24) ?? Date(), mobileManufacturerName: "hghf", planName: "ghjjh", mobileNumber: "997878", internetGbUsed: 988.98, minuteUsed: 887)
 
 m1.display()
+
+var i1 = Internet(billId: 98, billDate: Date.from(year: 2020, month: 01, day: 21) ?? Date(), providerName: "Rogers", plannedGbUsed: 15)
+
+i1.display()

@@ -32,7 +32,7 @@ public class Internet: Bill
         print("Bill ID: \(self.billId.concatInternetPrefix())")
         super.display()
         print("Provider Name: \(self.providerName)")
-        print("Internet GB Used: \(self.plannedGbUsed)")
+        print("Internet GB Used: \(self.plannedGbUsed) GB")
     }
     
 }

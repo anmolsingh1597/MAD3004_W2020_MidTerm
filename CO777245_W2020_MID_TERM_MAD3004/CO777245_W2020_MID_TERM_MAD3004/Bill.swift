@@ -16,20 +16,24 @@ public class Bill
     let billId: Int
     var billDate: Date
     var billType: Enum.BillType
-    var billAmount: Double
+    var billAmount: Double = 0.0
    
-    init(billId: Int, billDate: Date ,billType: Enum.BillType, billAmount: Double){  //constructor
+    init(billId: Int, billDate: Date ,billType: Enum.BillType){  //constructor
          self.billId = billId //intializing variables necessary in class
          self.billDate = billDate
         self.billType = billType
-        self.billAmount = billAmount
+     
        
      }
-    
+
+    func calculateBill() -> Double{
+        return billAmount
+    }
+
     func display(){
         print("Bill Date: \(billDate.getFormattedDate())")
          print("Bill Type: \(billType)")
-        print("Bill Amount: \(billAmount.getFormattedAmount())")
+        print("Bill Amount: \(calculateBill().getFormattedAmount())")
      }
     
 }

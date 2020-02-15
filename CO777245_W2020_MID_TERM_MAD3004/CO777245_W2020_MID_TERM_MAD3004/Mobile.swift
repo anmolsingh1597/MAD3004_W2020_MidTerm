@@ -17,17 +17,24 @@ public class Mobile: Bill
     var planName: String
     var mobileNumber: String
     var internetGbUsed: Double
-    var minuteUsed: Int
+    var minuteUsed: Double
     
-    init(billId: Int, billDate: Date , totalBillAmount: Double, mobileManufacturerName: String, planName: String, mobileNumber: String, internetGbUsed: Double, minuteUsed: Int){
+    init(billId: Int, billDate: Date, mobileManufacturerName: String, planName: String, mobileNumber: String, internetGbUsed: Double, minuteUsed: Double){
         
         self.mobileManufacturerName = mobileManufacturerName
         self.planName = planName
         self.mobileNumber = mobileNumber
         self.internetGbUsed = internetGbUsed
         self.minuteUsed = minuteUsed
-        super.init(billId: billId, billDate: billDate, billType: Enum.BillType.Mobile, totalBillAmount: totalBillAmount)
+        super.init(billId: billId, billDate: billDate, billType: Enum.BillType.Mobile)
     }
+    
+   override func calculateBill() -> Double{
+        
+    super.billAmount = 1 * self.internetGbUsed + 1*minuteUsed
+        return super.billAmount
+    }
+    
     override func display() {
         print("Bill ID: \(billId.concatMobilePrefix())")
         super.display()

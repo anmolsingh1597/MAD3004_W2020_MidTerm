@@ -11,7 +11,7 @@ import Foundation
 
 var c1 : Customer
 
-c1 = Customer(id: 987, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billDictionary: ["Hydro" : 897.9, "Internet" : 876.9])
+c1 = Customer(id: 987, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com")
 
 c1.display()
 
@@ -20,6 +20,6 @@ c1.display()
 b1.display()
 */
 
-var m1 = Mobile(billId: 008, billDate: Date.from(year: 1989, month: 12, day: 24) ?? Date(), totalBillAmount: 897.99, mobileManufacturerName: "hghf", planName: "ghjjh", mobileNumber: "997878", internetGbUsed: 988.98, minuteUsed: 887)
+var m1 = Mobile(billId: 008, billDate: Date.from(year: 1989, month: 12, day: 24) ?? Date(), mobileManufacturerName: "hghf", planName: "ghjjh", mobileNumber: "997878", internetGbUsed: 988.98, minuteUsed: 887)
 
 m1.display()

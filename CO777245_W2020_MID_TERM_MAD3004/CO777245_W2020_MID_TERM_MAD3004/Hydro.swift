@@ -29,10 +29,10 @@ public class Hydro: Bill
     }
     
     override func display() {
-        print("Bill ID : \(self.billId.concatHydroPrefix())")
+        print("\t\tBill ID : \(self.billId.concatHydroPrefix())")
         super.display()
-        print("Agency Name : \(self.agencyName)")
-        print("Units Consumed : \(self.unitConsumed.concatUnits())")
+        print("\t\tAgency Name : \(self.agencyName)")
+        print("\t\tUnits Consumed : \(self.unitConsumed.concatUnits())")
     }
     
 }

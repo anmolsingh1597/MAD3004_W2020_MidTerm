@@ -43,18 +43,18 @@ public class Mobile: Bill
     }
     
     override func display() {
-        print("Bill ID : \(billId.concatMobilePrefix())")
+        print("\t\tBill ID : \(billId.concatMobilePrefix())")
         super.display()
-        print("Manufactuer Name : \(mobileManufacturerName)")
-        print("Plan Name : \(planName)")
+        print("\t\tManufactuer Name : \(mobileManufacturerName)")
+        print("\t\tPlan Name : \(planName)")
            if self.isValidMobileNumber(value: mobileNumber){
-                 print("Mobile Number : \(self.mobileNumber)")
+                 print("\t\tMobile Number : \(self.mobileNumber)")
             }
             else{
-                print("Mobile Number : invalid mobile number")
+                print("\t\tMobile Number : invalid mobile number")
             }
-        print("Internet Used : \(internetGbUsed.concatGb())")
-        print("Minutes Used : \(minuteUsed.concatMinutes())")
+        print("\t\tInternet Used : \(internetGbUsed.concatGb())")
+        print("\t\tMinutes Used : \(minuteUsed.concatMinutes())")
         
     }
     

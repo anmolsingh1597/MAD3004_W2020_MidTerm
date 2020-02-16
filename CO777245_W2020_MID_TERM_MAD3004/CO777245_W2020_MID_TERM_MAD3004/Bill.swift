@@ -31,9 +31,9 @@ public class Bill
     }
 
     func display(){
-        print("Bill Date : \(billDate.getFormattedDate())")
-         print("Bill Type : \(billType)")
-        print("Bill Amount : \(calculateBill().getFormattedAmount())")
+        print("\t\tBill Date : \(billDate.getFormattedDate())")
+         print("\t\tBill Type : \(billType)")
+        print("\t\tBill Amount : \(calculateBill().getFormattedAmount())")
      }
     
 }

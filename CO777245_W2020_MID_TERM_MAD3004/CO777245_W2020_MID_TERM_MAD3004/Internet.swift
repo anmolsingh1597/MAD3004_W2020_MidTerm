@@ -29,10 +29,10 @@ public class Internet: Bill
     }
     
     override func display() {
-        print("Bill ID : \(self.billId.concatInternetPrefix())")
+        print("\t\tBill ID : \(self.billId.concatInternetPrefix())")
         super.display()
-        print("Provider Name : \(self.providerName)")
-        print("Internet GB Used : \(self.plannedGbUsed.concatGb())")
+        print("\t\tProvider Name : \(self.providerName)")
+        print("\t\tInternet GB Used : \(self.plannedGbUsed.concatGb())")
     }
     
 }

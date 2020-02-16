@@ -25,7 +25,6 @@ public class Customer: IDisplay
     var emailId: String
     var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
-  //  var custDictionary = [Int: Customer]()
     var billarray: [Bill]?
     
     init(id: Int, firstName: String, lastName: String, emailId: String, billarray: [Bill]?){
@@ -42,7 +41,7 @@ public class Customer: IDisplay
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-
+    
     func assigningBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
         

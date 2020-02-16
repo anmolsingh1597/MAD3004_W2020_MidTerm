@@ -8,7 +8,7 @@
 
 import Foundation
 
-var mBill1 = Mobile(billId: 1, billDate: Date.from(year: 2019, month: 12, day: 24) ?? Date(), mobileManufacturerName: "Apple Inc. iPhone X MAX+", planName: "LTE+3G 9.5GB Promo plan", mobileNumber: "416-666-4181", internetGbUsed: 58.98, minuteUsed: 887)
+var mBill1 = Mobile(billId: 1, billDate: Date.from(year: 2019, month: 12, day: 24) ?? Date(), mobileManufacturerName: "Apple Inc. iPhone XR", planName: "LTE+4G 9.5GB Promo plan", mobileNumber: "416-666-4181", internetGbUsed: 58.98, minuteUsed: 887)
 
 var mBill2 = Mobile(billId: 2, billDate: Date(), mobileManufacturerName: "Galaxy Samsung Inc.", planName: "Prepaid Talk + Text plan", mobileNumber: "416-432-2234", internetGbUsed: 67.00, minuteUsed: 34.45)
 
@@ -40,7 +40,7 @@ var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", email
 
 var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: nil)
 
-
+// assigning bills to respective customers
 c1.assigningBillstoCustomer(bill: mBill1)
 c1.assigningBillstoCustomer(bill: iBill1)
 c2.assigningBillstoCustomer(bill: mBill2)
@@ -48,17 +48,32 @@ c2.assigningBillstoCustomer(bill: iBill2)
 c2.assigningBillstoCustomer(bill: hBill1)
 c3.assigningBillstoCustomer(bill: hBill2)
 
-var custDictionary = [Int: Customer]()
-func addCustomer(cust: Customer){
-custDictionary.updateValue(cust, forKey: cust.id)
+var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary
+func addCustomer(customer: Customer){
+arrangingCustomerInDictionary.updateValue(customer, forKey: customer.id)
 
 }
-addCustomer(cust: c1)
-addCustomer(cust: c2)
-addCustomer(cust: c3)
-addCustomer(cust: c4)
+addCustomer(customer: c1)
+addCustomer(customer: c2)
+addCustomer(customer: c3)
+addCustomer(customer: c4)
 
-for c in custDictionary.keys.sorted(){
+for c in arrangingCustomerInDictionary.keys.sorted(){
 
-    custDictionary[c]?.display()
+    arrangingCustomerInDictionary[c]?.display()
 }
+
+func getCustomerById(getByCustomerId: Int){
+    if arrangingCustomerInDictionary.keys.contains(getByCustomerId)
+    {
+        print("\t\t########## Customer Fetched By ID ##########")
+        print()
+        arrangingCustomerInDictionary[getByCustomerId]?.display()
+    }else{
+        print("Customer specified to provided ID doesn't exist")
+        print()
+    }
+    
+}
+
+getCustomerById(getByCustomerId: 1)

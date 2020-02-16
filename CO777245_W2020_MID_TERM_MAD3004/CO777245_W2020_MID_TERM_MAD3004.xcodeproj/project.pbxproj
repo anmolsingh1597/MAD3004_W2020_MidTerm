@@ -78,16 +78,16 @@
 			isa = PBXGroup;
 			children = (
 				8E3E08F723F6114C0054818B /* main.swift */,
-				8E3E08FE23F611CB0054818B /* Customer.swift */,
 				8E3E090023F616570054818B /* IDislpayDelegate.swift */,
+				8E3E08FE23F611CB0054818B /* Customer.swift */,
 				8E3E090223F61BB70054818B /* Bill.swift */,
-				8E3E090423F61C7F0054818B /* Enum.swift */,
 				8E3E090623F61F1C0054818B /* Mobile.swift */,
+				8E3E090E23F899400054818B /* Internet.swift */,
+				8E3E091023F89DBC0054818B /* Hydro.swift */,
+				8E3E090423F61C7F0054818B /* Enum.swift */,
 				8E3E090823F8703C0054818B /* Double+extension.swift */,
 				8E3E090A23F872B10054818B /* Date+extension.swift */,
 				8E3E090C23F877EC0054818B /* Integer+extension.swift */,
-				8E3E090E23F899400054818B /* Internet.swift */,
-				8E3E091023F89DBC0054818B /* Hydro.swift */,
 			);
 			path = CO777245_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";

@@ -44,7 +44,6 @@ public class Customer: IDisplay
     
     func assigningBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
-        
     }
 
     func totalBillingAmount() ->Double{
@@ -57,8 +56,8 @@ public class Customer: IDisplay
     
     
     func display() {
-        print("Customer Id : \(self.id.concatCustomerPrefix())")
-        print("Customer Full Name : \(self.fullName)")
+            print("Customer Id : \(self.id.concatCustomerPrefix())")
+            print("Customer Full Name : \(self.fullName)")
         if self.isValidEmail(email: emailId){
              print("Customer Email ID : \(self.emailId)")
         }
@@ -66,11 +65,11 @@ public class Customer: IDisplay
             print("Customer Email ID : invalid email")
         }
         
-          print("\t\t\t\t----BILL INFORMATION----")
-          print("\t\t****************************************")
+            print("\t\t\t\t----Bill Information----")
+            print("\t\t****************************************")
           if billDictionary.isEmpty
           {
-              print("\t\tThis Customer has no Bills to pay")
+            print("\t\tThis Customer has no Bills to pay")
           }
           else
           {
@@ -78,14 +77,13 @@ public class Customer: IDisplay
                   
               {
                   b.display()
-                  print("\t\t*****************************************")
+            print("\t\t*****************************************")
                   
               }
-              print("\t\tTotal Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount() )")
-             
-          
+            print("\t\t\tTotal Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount())")
+            print("\t\t*****************************************")
       }
-      //  print("\t\tArray: \(billarray)")
+      //  print("\t\tArray: \(billarray)") // bill array
         print("")
     }
     

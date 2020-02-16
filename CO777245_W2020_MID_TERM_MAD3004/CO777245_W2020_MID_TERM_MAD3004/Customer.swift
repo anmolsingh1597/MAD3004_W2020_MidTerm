@@ -26,12 +26,14 @@ public class Customer: IDisplay
     var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
     var custDictionary = [Int: Customer]()
+    var bill: [Bill]?
     
-    init(id: Int, firstName: String, lastName: String, emailId: String){
+    init(id: Int, firstName: String, lastName: String, emailId: String, bill: [Bill]?){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
+        self.bill = bill
     }
     
     func isValidEmail(email: String) -> Bool {
@@ -40,13 +42,12 @@ public class Customer: IDisplay
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
-    
-    
-    func addingBillstoCustomer(bill: Bill){
+
+    func assigningBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
         
     }
-    
+
     func totalBillingAmount(){
         for index in billDictionary.values{
             totalBill += index.billAmount
@@ -64,7 +65,7 @@ public class Customer: IDisplay
         else{
             print("Customer Email ID : invalid email")
         }
-        
+        print("Array: \(bill)")
     }
     
 }

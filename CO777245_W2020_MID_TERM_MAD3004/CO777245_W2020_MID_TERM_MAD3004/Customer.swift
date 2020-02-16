@@ -25,15 +25,15 @@ public class Customer: IDisplay
     var emailId: String
     var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
-    var custDictionary = [Int: Customer]()
-    var bill: [Bill]?
+  //  var custDictionary = [Int: Customer]()
+    var billarray: [Bill]?
     
-    init(id: Int, firstName: String, lastName: String, emailId: String, bill: [Bill]?){
+    init(id: Int, firstName: String, lastName: String, emailId: String, billarray: [Bill]?){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
-        self.bill = bill
+        self.billarray = billarray
     }
     
     func isValidEmail(email: String) -> Bool {
@@ -58,8 +58,6 @@ public class Customer: IDisplay
     
     
     func display() {
-        print("\t")
-        print("------CUSTOMER INFORMATION---------")
         print("Customer Id : \(self.id.concatCustomerPrefix())")
         print("Customer Full Name : \(self.fullName)")
         if self.isValidEmail(email: emailId){
@@ -69,11 +67,11 @@ public class Customer: IDisplay
             print("Customer Email ID : invalid email")
         }
         
-          print("------BILL INFORMATION---------")
-          print("*********************************************")
+          print("\t\t\t\t----BILL INFORMATION----")
+          print("\t\t****************************************")
           if billDictionary.isEmpty
           {
-              print(" This Customer has no Bills to pay")
+              print("\t\tThis Customer has no Bills to pay")
           }
           else
           {
@@ -81,14 +79,15 @@ public class Customer: IDisplay
                   
               {
                   b.display()
-                  print("*****************************************")
+                  print("\t\t*****************************************")
                   
               }
-              print("Total Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount() )")
+              print("\t\tTotal Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount() )")
              
           
       }
-        print("Array: \(bill)")
+      //  print("\t\tArray: \(billarray)")
+        print("")
     }
     
 }

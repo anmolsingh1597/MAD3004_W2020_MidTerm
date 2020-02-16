@@ -48,15 +48,18 @@ public class Customer: IDisplay
         
     }
 
-    func totalBillingAmount(){
+    func totalBillingAmount() ->Double{
         for index in billDictionary.values{
             totalBill += index.billAmount
-        }
+     }
+        return Double(totalBill)
     }
     
     
     
     func display() {
+        print("\t")
+        print("------CUSTOMER INFORMATION---------")
         print("Customer Id : \(self.id.concatCustomerPrefix())")
         print("Customer Full Name : \(self.fullName)")
         if self.isValidEmail(email: emailId){
@@ -65,6 +68,26 @@ public class Customer: IDisplay
         else{
             print("Customer Email ID : invalid email")
         }
+        
+          print("------BILL INFORMATION---------")
+          print("*********************************************")
+          if billDictionary.isEmpty
+          {
+              print(" This Customer has no Bills to pay")
+          }
+          else
+          {
+              for b in billDictionary.values
+                  
+              {
+                  b.display()
+                  print("*****************************************")
+                  
+              }
+              print("Total Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount() )")
+             
+          
+      }
         print("Array: \(bill)")
     }
     

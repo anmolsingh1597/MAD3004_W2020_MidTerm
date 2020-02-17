@@ -12,25 +12,15 @@ var mBill1 = Mobile(billId: 1, billDate: Date.from(year: 2019, month: 12, day: 2
 
 var mBill2 = Mobile(billId: 2, billDate: Date(), mobileManufacturerName: "Galaxy Samsung Inc.", planName: "Prepaid Talk + Text plan", mobileNumber: "416-432-2234", internetGbUsed: 67.00, minuteUsed: 34.45)
 
-//mBill1.display()
-
-//mBill2.display()
 
 var iBill1 = Internet(billId: 3, billDate: Date.from(year: 2020, month: 01, day: 21) ?? Date(), providerName: "Rogers", plannedGbUsed: 150)
 
 var iBill2 = Internet(billId: 4, billDate: Date(), providerName: "Bell", plannedGbUsed: 250)
 
-//iBill1.display()
-
-//iBill2.display()
 
 var hBill1 = Hydro(billId: 5, billDate: Date(), agencyName: "Canadian Supply", unitConsumed: 32)
 
 var hBill2 = Hydro(billId: 6, billDate: Date.from(year: 2020, month: 01, day: 18) ?? Date(), agencyName: "Planet Energy", unitConsumed: 45)
-
-//hBill1.display()
-
-//hBill2.display()
 
 var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill2, iBill1])
 

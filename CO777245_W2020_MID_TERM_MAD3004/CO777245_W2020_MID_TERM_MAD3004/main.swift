@@ -40,14 +40,7 @@ var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", email
 
 var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: [])
 
-// assigning bills to respective customers
-/*c1.assigningBillstoCustomer(bill: mBill1)
-c1.assigningBillstoCustomer(bill: iBill1)
-c2.assigningBillstoCustomer(bill: mBill2)
-c2.assigningBillstoCustomer(bill: iBill2)
-c2.assigningBillstoCustomer(bill: hBill1)
-c3.assigningBillstoCustomer(bill: hBill2)
-*/
+
 var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary
 func addCustomer(customer: Customer){
 arrangingCustomerInDictionary.updateValue(customer, forKey: customer.id)
@@ -58,7 +51,6 @@ addCustomer(customer: c2)
 addCustomer(customer: c3)
 addCustomer(customer: c4)
 
-//print(arrangingCustomerInDictionary)
 
 for c in arrangingCustomerInDictionary.keys.sorted(){
 

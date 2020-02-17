@@ -48,10 +48,6 @@ public class Customer: IDisplay
             }
     }
     
-   /* func assigningBillstoCustomer(bill: Bill){
-        billDictionary.updateValue(bill, forKey: bill.billId)
-    }
-*/
     func totalBillingAmount() ->Double{
         var ref: Double = 0.0
         for index in billDictionary.values{
@@ -96,4 +92,4 @@ public class Customer: IDisplay
     }
     
 }
-//sample comit
+

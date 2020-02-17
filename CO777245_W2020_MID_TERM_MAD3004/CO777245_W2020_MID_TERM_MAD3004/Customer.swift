@@ -57,8 +57,8 @@ public class Customer: IDisplay
         for index in billDictionary.values{
             totalBill += index.billAmount
             ref = totalBill
-            totalBill = 0.0
      }
+        totalBill = 0.0
         return Double(ref)
     }
     

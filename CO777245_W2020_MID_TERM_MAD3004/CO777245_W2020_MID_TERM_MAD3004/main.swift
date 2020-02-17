@@ -51,12 +51,14 @@ c3.assigningBillstoCustomer(bill: hBill2)
 var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary
 func addCustomer(customer: Customer){
 arrangingCustomerInDictionary.updateValue(customer, forKey: customer.id)
-
 }
+
 addCustomer(customer: c1)
 addCustomer(customer: c2)
 addCustomer(customer: c3)
 addCustomer(customer: c4)
+
+//print(arrangingCustomerInDictionary)
 
 for c in arrangingCustomerInDictionary.keys.sorted(){
 

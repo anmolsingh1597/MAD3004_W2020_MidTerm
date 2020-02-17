@@ -53,10 +53,13 @@ public class Customer: IDisplay
     }
 */
     func totalBillingAmount() ->Double{
+        var ref: Double = 0.0
         for index in billDictionary.values{
             totalBill += index.billAmount
+            ref = totalBill
+            totalBill = 0.0
      }
-        return Double(totalBill)
+        return Double(ref)
     }
     
     

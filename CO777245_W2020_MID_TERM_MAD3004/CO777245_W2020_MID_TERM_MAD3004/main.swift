@@ -72,11 +72,11 @@ func getCustomerById(getByCustomerId: Int){
         print()
         arrangingCustomerInDictionary[getByCustomerId]?.display()
     }else{
-        print("Customer specified to provided ID doesn't exist")
+        print("Customer Not Found...")
         print()
     }
     
 }
 
-getCustomerById(getByCustomerId: 2)
+getCustomerById(getByCustomerId: 1)
 

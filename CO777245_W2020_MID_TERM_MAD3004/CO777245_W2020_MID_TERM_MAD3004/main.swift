@@ -78,5 +78,5 @@ func getCustomerById(getByCustomerId: Int){
     
 }
 
-getCustomerById(getByCustomerId: 2)
+getCustomerById(getByCustomerId: 3)
 

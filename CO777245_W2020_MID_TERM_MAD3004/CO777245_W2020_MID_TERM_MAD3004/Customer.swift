@@ -25,14 +25,14 @@ public class Customer: IDisplay
     var emailId: String
     var totalBill: Double = 0.0
     var billDictionary = [Int: Bill]()
-    var billarray: [Bill]?
-    
-    init(id: Int, firstName: String, lastName: String, emailId: String, billarray: [Bill]?){
+    var billarray: [Bill]
+    init(id: Int, firstName: String, lastName: String, emailId: String, billarray: [Bill]){
         self.id = id
         self.firstName = firstName
         self.lastName = lastName
         self.emailId = emailId
         self.billarray = billarray
+        arrayToHashMap()
     }
     
     func isValidEmail(email: String) -> Bool {
@@ -42,10 +42,16 @@ public class Customer: IDisplay
         return emailPred.evaluate(with: email)
     }
     
-    func assigningBillstoCustomer(bill: Bill){
+    func arrayToHashMap(){
+            for bill in billarray  {
+                billDictionary.updateValue(bill, forKey: bill.billId )
+            }
+    }
+    
+   /* func assigningBillstoCustomer(bill: Bill){
         billDictionary.updateValue(bill, forKey: bill.billId)
     }
-
+*/
     func totalBillingAmount() ->Double{
         for index in billDictionary.values{
             totalBill += index.billAmount
@@ -83,8 +89,8 @@ public class Customer: IDisplay
             print("\t\t\tTotal Bill Amount to Pay: \(totalBillingAmount().getFormattedAmount())")
             print("\t\t*****************************************")
       }
-      //  print("\t\tArray: \(billarray)") // bill array
         print("")
     }
     
 }
+//sample comit

@@ -32,22 +32,22 @@ var hBill2 = Hydro(billId: 6, billDate: Date.from(year: 2020, month: 01, day: 18
 
 //hBill2.display()
 
-var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill1, iBill1])
+var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill2, iBill1])
 
-var c2 : Customer = Customer(id: 2, firstName: "Aman", lastName: "Kaur", emailId: "me_aman@me.com", billarray: [mBill2, iBill2, hBill1])
+var c2 : Customer = Customer(id: 2, firstName: "Aman", lastName: "Kaur", emailId: "me_aman@me.com", billarray: [mBill1, iBill2, hBill1])
 
 var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", emailId: "me_ikroop@me.com", billarray: [hBill2])
 
-var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: nil)
+//var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: nil)
 
 // assigning bills to respective customers
-c1.assigningBillstoCustomer(bill: mBill1)
+/*c1.assigningBillstoCustomer(bill: mBill1)
 c1.assigningBillstoCustomer(bill: iBill1)
 c2.assigningBillstoCustomer(bill: mBill2)
 c2.assigningBillstoCustomer(bill: iBill2)
 c2.assigningBillstoCustomer(bill: hBill1)
 c3.assigningBillstoCustomer(bill: hBill2)
-
+*/
 var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary
 func addCustomer(customer: Customer){
 arrangingCustomerInDictionary.updateValue(customer, forKey: customer.id)
@@ -56,7 +56,7 @@ arrangingCustomerInDictionary.updateValue(customer, forKey: customer.id)
 addCustomer(customer: c1)
 addCustomer(customer: c2)
 addCustomer(customer: c3)
-addCustomer(customer: c4)
+//addCustomer(customer: c4)
 
 //print(arrangingCustomerInDictionary)
 
@@ -78,5 +78,5 @@ func getCustomerById(getByCustomerId: Int){
     
 }
 
-getCustomerById(getByCustomerId: 1)
+getCustomerById(getByCustomerId: 2)
 

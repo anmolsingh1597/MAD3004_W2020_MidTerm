@@ -8,7 +8,7 @@
 
 import Foundation
 
-var mBill1 = Mobile(billId: 1, billDate: Date.from(year: 2019, month: 12, day: 24) ?? Date(), mobileManufacturerName: "Apple Inc. iPhone XR", planName: "LTE+4G 9.5GB Promo plan", mobileNumber: "416-666-4181", internetGbUsed: 58.98, minuteUsed: 887)
+var mBill1 = Mobile(billId: 1, billDate: Date.from(year: 2020, month: 02, day: 14) ?? Date(), mobileManufacturerName: "Apple Inc. iPhone XR", planName: "LTE+4G 9.5GB Promo plan", mobileNumber: "416-666-4181", internetGbUsed: 58.98, minuteUsed: 887)
 
 var mBill2 = Mobile(billId: 2, billDate: Date(), mobileManufacturerName: "Galaxy Samsung Inc.", planName: "Prepaid Talk + Text plan", mobileNumber: "416-432-2234", internetGbUsed: 67.00, minuteUsed: 34.45)
 
@@ -21,6 +21,7 @@ var iBill2 = Internet(billId: 4, billDate: Date(), providerName: "Bell", planned
 var hBill1 = Hydro(billId: 5, billDate: Date(), agencyName: "Canadian Supply", unitConsumed: 32)
 
 var hBill2 = Hydro(billId: 6, billDate: Date.from(year: 2020, month: 01, day: 18) ?? Date(), agencyName: "Planet Energy", unitConsumed: 45)
+
 
 var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill1, iBill1])
 
@@ -60,5 +61,5 @@ func getCustomerById(getByCustomerId: Int){
     
 }
 
-getCustomerById(getByCustomerId: 3)
+getCustomerById(getByCustomerId: 1)
 

@@ -63,7 +63,3 @@ func getCustomerById(getByCustomerId: Int){
 
 getCustomerById(getByCustomerId: 1)
 
-
-var ins1 = Insurance(insuranceId: 1, insuranceProviderName: "INS", insuranceType: Enum.InsuranceType.Car, startDate: Date.from(year: 2020, month: 02, day: 14) ?? Date(), endDate: Date.from(year: 2020, month: 02, day: 17) ?? Date())
-
-ins1.display()

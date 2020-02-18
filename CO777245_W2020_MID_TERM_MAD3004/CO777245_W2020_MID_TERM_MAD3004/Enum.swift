@@ -14,6 +14,7 @@ public struct Enum
         case Mobile
         case Internet
         case Hydro
+        case Insurance
         case None
     }
     

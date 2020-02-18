@@ -28,4 +28,9 @@ extension Int{
          return "HYDB000\(self)"
     }
     
-}
+    func concatInsurancePrefix() -> String
+    {
+        return "INS0000c"
+    }
+    
+    }

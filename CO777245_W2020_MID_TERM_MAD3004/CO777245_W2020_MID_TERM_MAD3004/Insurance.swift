@@ -22,7 +22,7 @@ public class Insurance: Bill
         
         return Date.daysBetween(start: startDate, end: endDate)
     }
-    var totalInstallment: Double = 0.0
+ 
     var totalInstallmentToPay: Double
     
     init(billId: Int, billDate: Date,insuranceProviderName: String, insuranceType: Enum.InsuranceType, startDate: Date, endDate: Date, totalInstallmentToPay: Double){
@@ -35,18 +35,18 @@ public class Insurance: Bill
         super.init(billId: billId, billDate: billDate, billType: Enum.BillType.Insurance)
      }
 
-    func calculateInsuranceBill() -> Double{
+   override func calculateBill() -> Double{
         switch self.insuranceType{
         case Enum.InsuranceType.Car:
-            totalInstallment = Double(totalDays)*12.36
+            super.billAmount = Double(totalDays)*2.36
         case Enum.InsuranceType.Home:
-            print("Home")
+            super.billAmount = Double(totalDays)*12.36
         case Enum.InsuranceType.Business:
-            print("Businiess")
+            super.billAmount = Double(totalDays)*14.36
         default :
             print("Default")
         }
-        return totalInstallment
+        return super.billAmount
     }
 
   override func display(){
@@ -57,6 +57,7 @@ public class Insurance: Bill
         print("\t\tStart Date : \(self.startDate.getFormattedDate())")
         print("\t\tEnd Date : \(self.endDate.getFormattedDate())")
         print("\t\tTotal Days : \(self.totalDays)")
+    print("\t\tTotal Installement To Pay : \(self.totalInstallmentToPay.getFormattedAmount())")
      }
     
 }

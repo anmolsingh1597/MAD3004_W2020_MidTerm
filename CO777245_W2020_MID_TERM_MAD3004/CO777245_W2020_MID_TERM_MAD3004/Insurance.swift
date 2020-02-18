@@ -38,11 +38,11 @@ public class Insurance: Bill
    override func calculateBill() -> Double{
         switch self.insuranceType{
         case Enum.InsuranceType.Car:
-            super.billAmount = Double(totalDays)*2.36
+            super.billAmount = Double(totalDays)*0.236
         case Enum.InsuranceType.Home:
-            super.billAmount = Double(totalDays)*12.36
+            super.billAmount = Double(totalDays)*1.236
         case Enum.InsuranceType.Business:
-            super.billAmount = Double(totalDays)*14.36
+            super.billAmount = Double(totalDays)*1.436
         default :
             print("Default")
         }
@@ -50,7 +50,7 @@ public class Insurance: Bill
     }
 
   override func display(){
-        print("\t\tInsurance ID : \(self.billId.concatInsurancePrefix())")
+        print("\t\tBill ID : \(self.billId.concatInsurancePrefix())")
         super.display()
         print("\t\tInsurance Name Provider : \(self.insuranceProviderName)")
         print("\t\tInsurance Type : \(self.insuranceType)")

@@ -32,7 +32,7 @@ var c2 : Customer = Customer(id: 2, firstName: "Aman", lastName: "Kaur", emailId
 
 var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", emailId: "me_ikroop@me.com", billarray: [hBill2])
 
-var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: [])
+var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: [insBill1])
 
 
 var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary

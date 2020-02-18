@@ -24,15 +24,13 @@ var hBill2 = Hydro(billId: 6, billDate: Date.from(year: 2020, month: 01, day: 18
 
 var insBill1 = Insurance(billId: 7, billDate: Date.from(year: 2020, month: 02, day: 08) ?? Date(), insuranceProviderName: "Aviva Canada Inc.", insuranceType: .Home, startDate: Date.from(year: 2019, month: 01, day: 01) ?? Date(), endDate: Date.from(year: 2019, month: 12, day: 31) ?? Date(), totalInstallmentToPay: 4500.00)
 
-insBill1.display()
-
 var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill1, iBill1])
 
 var c2 : Customer = Customer(id: 2, firstName: "Aman", lastName: "Kaur", emailId: "me_aman@me.com", billarray: [mBill2, iBill2, hBill1])
 
-var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", emailId: "me_ikroop@me.com", billarray: [hBill2])
+var c3 : Customer = Customer(id: 3, firstName: "Ikroop", lastName: "Virk", emailId: "me_ikroop@me.com", billarray: [hBill2, insBill1])
 
-var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: [insBill1])
+var c4 : Customer = Customer(id: 4, firstName: "Monica", lastName: "Sharma", emailId: "me_monica@me.com", billarray: [])
 
 
 var arrangingCustomerInDictionary = [Int: Customer]()  // customer dictionary

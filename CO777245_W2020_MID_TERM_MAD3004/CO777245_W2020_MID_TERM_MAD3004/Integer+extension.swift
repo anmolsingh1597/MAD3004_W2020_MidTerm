@@ -30,7 +30,7 @@ extension Int{
     
     func concatInsurancePrefix() -> String
     {
-        return "INS0000c"
+        return "INS000\(self)"
     }
     
     }

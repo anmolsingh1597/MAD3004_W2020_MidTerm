@@ -12,9 +12,8 @@ Date, Total Days (i.e. End Date – Start Date), Total Installment to pay in giv
 
 import Foundation
 
-public class Insurance
+public class Insurance: Bill
 {
-    var insuranceId: Int
     var insuranceProviderName: String
     var insuranceType: Enum.InsuranceType
     var startDate: Date
@@ -25,12 +24,13 @@ public class Insurance
     }
     var totalInstallment: Double = 0.0
     
-    init(insuranceId: Int, insuranceProviderName: String, insuranceType: Enum.InsuranceType, startDate: Date, endDate: Date){  //constructor
-        self.insuranceId = insuranceId
+    init(billId: Int, billDate: Date,insuranceProviderName: String, insuranceType: Enum.InsuranceType, startDate: Date, endDate: Date){
+        
         self.insuranceProviderName = insuranceProviderName
         self.insuranceType = insuranceType
         self.startDate = startDate
         self.endDate = endDate
+        super.init(billId: billId, billDate: billDate, billType: Enum.BillType.Insurance)
      }
 
     func calculateInsuranceBill() -> Double{
@@ -48,12 +48,12 @@ public class Insurance
     }
 
     func display(){
-        print("Insurance ID : \(self.insuranceId)")
-        print("Insurance Name Provider : \(self.insuranceProviderName)")
-        print("Insurance Type : \(self.insuranceType)")
-        print("Start Date : \(self.startDate.getFormattedDate())")
-        print("End Date : \(self.endDate.getFormattedDate())")
-        print("Total Days : \(self.totalDays)")
+        print("\t\tInsurance ID : \(self.insuranceId.concatInsurancePrefix())")
+        print("\t\tInsurance Name Provider : \(self.insuranceProviderName)")
+        print("\t\tInsurance Type : \(self.insuranceType)")
+        print("\t\tStart Date : \(self.startDate.getFormattedDate())")
+        print("\t\tEnd Date : \(self.endDate.getFormattedDate())")
+        print("\t\tTotal Days : \(self.totalDays)")
      }
     
 }

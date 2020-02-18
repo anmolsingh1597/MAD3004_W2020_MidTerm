@@ -16,4 +16,11 @@ public struct Enum
         case Hydro
         case None
     }
+    
+    enum InsuranceType {
+               case Home
+               case Car
+               case Business
+               case None
+           }
 }

@@ -18,6 +18,7 @@
 		8E3E090D23F877EC0054818B /* Integer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090C23F877EC0054818B /* Integer+extension.swift */; };
 		8E3E090F23F899410054818B /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E090E23F899400054818B /* Internet.swift */; };
 		8E3E091123F89DBC0054818B /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E091023F89DBC0054818B /* Hydro.swift */; };
+		8E3E091923FC43EE0054818B /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E091823FC43EE0054818B /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		8E3E090C23F877EC0054818B /* Integer+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Integer+extension.swift"; sourceTree = "<group>"; };
 		8E3E090E23F899400054818B /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		8E3E091023F89DBC0054818B /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		8E3E091823FC43EE0054818B /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				8E3E090623F61F1C0054818B /* Mobile.swift */,
 				8E3E090E23F899400054818B /* Internet.swift */,
 				8E3E091023F89DBC0054818B /* Hydro.swift */,
+				8E3E091823FC43EE0054818B /* Insurance.swift */,
 				8E3E090423F61C7F0054818B /* Enum.swift */,
 				8E3E090823F8703C0054818B /* Double+extension.swift */,
 				8E3E090A23F872B10054818B /* Date+extension.swift */,
@@ -152,6 +155,7 @@
 			files = (
 				8E3E090323F61BB70054818B /* Bill.swift in Sources */,
 				8E3E08F823F6114C0054818B /* main.swift in Sources */,
+				8E3E091923FC43EE0054818B /* Insurance.swift in Sources */,
 				8E3E08FF23F611CB0054818B /* Customer.swift in Sources */,
 				8E3E090723F61F1C0054818B /* Mobile.swift in Sources */,
 				8E3E090F23F899410054818B /* Internet.swift in Sources */,

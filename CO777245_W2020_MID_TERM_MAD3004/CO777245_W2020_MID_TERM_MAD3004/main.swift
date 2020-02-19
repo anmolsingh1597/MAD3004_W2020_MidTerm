@@ -22,7 +22,7 @@ var hBill1 = Hydro(billId: 5, billDate: Date(), agencyName: "Canadian Supply", u
 
 var hBill2 = Hydro(billId: 6, billDate: Date.from(year: 2020, month: 01, day: 18) ?? Date(), agencyName: "Planet Energy", unitConsumed: 45)
 
-var insBill1 = Insurance(billId: 7, billDate: Date.from(year: 2020, month: 02, day: 08) ?? Date(), insuranceProviderName: "Aviva Canada Inc.", insuranceType: .Home, startDate: Date.from(year: 2019, month: 01, day: 01) ?? Date(), endDate: Date.from(year: 2019, month: 12, day: 31) ?? Date(), totalInstallmentToPay: 4500.00)
+var insBill1 = Insurance(billId: 7, billDate: Date.from(year: 2020, month: 02, day: 08) ?? Date(), insuranceProviderName: "Aviva Canada Inc.", insuranceType: .Home, startDate: Date.from(year: 2019, month: 01, day: 01) ?? Date(), endDate: Date.from(year: 2019, month: 12, day: 31) ?? Date())
 
 var c1 : Customer = Customer(id: 1, firstName: "Anmol", lastName: "Singh", emailId: "me_anmol@me.com", billarray: [mBill1, iBill1])
 
@@ -62,5 +62,5 @@ func getCustomerById(getByCustomerId: Int){
     
 }
 
-getCustomerById(getByCustomerId: 1)
+getCustomerById(getByCustomerId: 3)
 
